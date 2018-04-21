@@ -193,6 +193,7 @@ namespace WindowsFormsApp2
             textBox1.Width = 246;
             panel1.Visible = false;
             panel2.Visible = false;
+            panel3.Visible = false;
         }
 
         private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
@@ -204,6 +205,7 @@ namespace WindowsFormsApp2
             // textBox1.Height =;
             panel1.Visible = true;
             panel2.Visible = false;
+            panel3.Visible = false;
             listBox1.Width = 380;
             textBox1.Width = 380;
         }
@@ -660,7 +662,7 @@ namespace WindowsFormsApp2
             this.Width = marimea.Width;
             // textBox1.Height =;
             panel1.Visible = false;
-            panel2.Visible = false;
+            panel3.Visible = false;
          
           
         }
@@ -668,6 +670,7 @@ namespace WindowsFormsApp2
         private void temperatureToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             panel2.Visible = true;
+            panel3.Visible = false;
         }
 
         private void button64_Click(object sender, EventArgs e)
@@ -679,6 +682,25 @@ namespace WindowsFormsApp2
         private void button65_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MarimeaFerestrei marimea = new MarimeaFerestrei();
+            marimea.Width = 412;
+            this.Height = 634;
+            this.Width = marimea.Width;
+            // textBox1.Height =;
+            panel3.Visible = true;
+           
+           
+
+
+        }
+
+        private void button66_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Test executat cu succes!!!");
         }
     }
 }

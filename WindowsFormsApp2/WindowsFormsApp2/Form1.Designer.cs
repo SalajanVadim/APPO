@@ -57,6 +57,7 @@
             this.button20 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button65 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.button57 = new System.Windows.Forms.Button();
@@ -113,10 +114,13 @@
             this.button64 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button65 = new System.Windows.Forms.Button();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.button66 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -136,7 +140,8 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.standartToolStripMenuItem,
             this.scientificToolStripMenuItem,
-            this.temperatureToolStripMenuItem});
+            this.temperatureToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
@@ -144,21 +149,21 @@
             // standartToolStripMenuItem
             // 
             this.standartToolStripMenuItem.Name = "standartToolStripMenuItem";
-            this.standartToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.standartToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.standartToolStripMenuItem.Text = "Standart";
             this.standartToolStripMenuItem.Click += new System.EventHandler(this.standartToolStripMenuItem_Click);
             // 
             // scientificToolStripMenuItem
             // 
             this.scientificToolStripMenuItem.Name = "scientificToolStripMenuItem";
-            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.scientificToolStripMenuItem.Text = "Scientific";
             this.scientificToolStripMenuItem.Click += new System.EventHandler(this.scientificToolStripMenuItem_Click);
             // 
             // temperatureToolStripMenuItem
             // 
             this.temperatureToolStripMenuItem.Name = "temperatureToolStripMenuItem";
-            this.temperatureToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.temperatureToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.temperatureToolStripMenuItem.Text = "Temperature";
             this.temperatureToolStripMenuItem.Click += new System.EventHandler(this.temperatureToolStripMenuItem_Click_1);
             // 
@@ -494,6 +499,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(380, 585);
             this.panel1.TabIndex = 23;
+            // 
+            // button65
+            // 
+            this.button65.BackColor = System.Drawing.Color.DarkMagenta;
+            this.button65.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.button65.Location = new System.Drawing.Point(158, 536);
+            this.button65.Name = "button65";
+            this.button65.Size = new System.Drawing.Size(57, 46);
+            this.button65.TabIndex = 58;
+            this.button65.Text = "Rad";
+            this.button65.UseVisualStyleBackColor = false;
+            this.button65.Visible = false;
+            this.button65.Click += new System.EventHandler(this.button65_Click);
             // 
             // textBox2
             // 
@@ -1112,6 +1130,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.button64);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.textBox4);
@@ -1122,22 +1141,35 @@
             this.panel2.Controls.Add(this.radioButton1);
             this.panel2.Controls.Add(this.radioButton3);
             this.panel2.Controls.Add(this.radioButton2);
-            this.panel2.Location = new System.Drawing.Point(410, 40);
+            this.panel2.Location = new System.Drawing.Point(7, 27);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(377, 532);
+            this.panel2.Size = new System.Drawing.Size(377, 530);
             this.panel2.TabIndex = 35;
             // 
-            // button65
+            // toolStripMenuItem1
             // 
-            this.button65.BackColor = System.Drawing.Color.DarkMagenta;
-            this.button65.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.button65.Location = new System.Drawing.Point(158, 536);
-            this.button65.Name = "button65";
-            this.button65.Size = new System.Drawing.Size(57, 46);
-            this.button65.TabIndex = 58;
-            this.button65.Text = "Rad";
-            this.button65.UseVisualStyleBackColor = false;
-            this.button65.Click += new System.EventHandler(this.button65_Click);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem1.Text = "Test";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // button66
+            // 
+            this.button66.Location = new System.Drawing.Point(125, 201);
+            this.button66.Name = "button66";
+            this.button66.Size = new System.Drawing.Size(75, 23);
+            this.button66.TabIndex = 34;
+            this.button66.Text = "Test";
+            this.button66.UseVisualStyleBackColor = true;
+            this.button66.Click += new System.EventHandler(this.button66_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.button66);
+            this.panel3.Location = new System.Drawing.Point(15, 59);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(351, 386);
+            this.panel3.TabIndex = 3600;
             // 
             // Form1
             // 
@@ -1183,6 +1215,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1276,6 +1309,9 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button65;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.Button button66;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 
